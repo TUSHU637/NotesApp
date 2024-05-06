@@ -36,9 +36,7 @@ function createNoteBox(text=""){
     </div>
     <textarea spellcheck="false" placeholder="write your notes...." class="text-area">${text}</textarea>
    
-
 `;
-
 
 container.appendChild(newNoteBox);
 
@@ -54,7 +52,10 @@ newNoteBox.querySelector("textarea").addEventListener("focusout",(e)=>{
 })
 }
 
-//page refreshing function
+//anonymous functions are self-invoking or self-executing, meaning they are called 
+//immediately after being declared. To call an anonymous function, you can use
+// brackets() after the function declaration.
+//this will acts as a page refreshing function as it run after each page refresh as page is refresh ...again html is load & first this function is call in js file automaticaaly
 (
 function(){
    let lsNote=JSON.parse(localStorage.getItem("note"));
