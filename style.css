@@ -32,7 +32,8 @@ border-radius: 10px;
 }
 .noteBox{
 margin-top:8rem;
-margin-left:1.2rem;
+margin-left:1rem;
+margin-right: 0.5rem;;
 height:30rem;
 width:25rem;
 }
@@ -67,4 +68,13 @@ width:25rem;
 .tools >* :hover{
     cursor: pointer;
     background-color: darkgray;
+}
+@media screen  and (max-width:500px){
+    .noteBox{
+        margin-top:8rem;
+        margin-left:1rem;
+        margin-right: 0.5rem;;
+        height:20rem;
+        width:17rem;
+        }
 }
